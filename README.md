@@ -10,7 +10,9 @@ Input --> Retriever --> Corpus --> Reader --> Generator --> Output
 
 
 * Retriever: This component takes the input text and queries a large corpus (e.g., Wikipedia) to retrieve relevant documents or passages based on semantic similarity. This is often done using embeddings and nearest-neighbor search techniques.
-*Reader: The retrieved documents or passages are then processed by a reading comprehension model (e.g., a transformer-based language model) to extract the most relevant information for the given input.
+
+* Reader: The retrieved documents or passages are then processed by a reading comprehension model (e.g., a transformer-based language model) to extract the most relevant information for the given input.
+
 * Generator: The output from the reader, along with the original input text, is fed into a language generation model (e.g., GPT) to produce the final output response.
 
 MongoDB, a widely adopted NoSQL document database, plays a pivotal role in the RAG system. It efficiently stores and retrieves embeddings and associated text data. MongoDB's adaptability and scalability make it an ideal choice for managing large text corpora and their corresponding embeddings in the RAG system.
